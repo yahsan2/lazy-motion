@@ -2,6 +2,8 @@
 
 Add classes by scroll position
 
+[Demo]
+
 [Demo]: http://yahsan2.github.io/lazy-motion/
 
 ## Example
