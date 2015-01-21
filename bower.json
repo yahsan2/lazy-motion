@@ -1,0 +1,29 @@
+{
+  "name": "lazy-motion",
+  "version": "0.0.0",
+  "authors": [
+    "yahsan2 <yahsan2@gmail.com>"
+  ],
+  "description": "Add classes by scroll position",
+  "keywords": [
+    "scroll",
+    "class",
+    "css",
+    "transition"
+  ],
+  "dependencies": {
+    "jquery": "1.11.0"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "jquery": "~1.11.x"
+  }
+}

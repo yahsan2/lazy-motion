@@ -1,0 +1,51 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+
+<style type="text/css" media="screen">
+  html, body { margin: 0; padding: 0; height: 100%; }
+  h1 { position: fixed; top: 0; margin: 0; padding: 20px 0; width: 100%; text-align: center; background: #fff; font-family: Times New Roman; z-index: 1; }
+  footer { position: fixed; bottom: 0; padding: 20px 0; width: 100%; text-align: center; background: #fff; z-index: 1; }
+  footer small{ font-size: .9em; display: block; font-family: Times New Roman; text-align: center; color: #666; }
+  footer small a{ text-decoration: none; font-weight: bold; color: #666; }
+</style>
+
+<style type="text/css" media="screen">
+  ul { margin: 80% auto; padding: 0;}
+  li { background: rgba(0, 0, 0, .2); border: 5px solid #ddd; width: 960px; height: 400px; transition: all 1s; position: relative; list-style: none; margin: 0 auto 20px; }
+  li:after { content: ''; position: absolute; width: 100%; height: 50%; top: 0; left: 0; border-bottom: 1px solid rgba(120, 120, 120, .5);}
+  li.is-custom { border: 5px solid #000; }
+  li:nth-child(4n).is-active { background: rgba(255, 0, 0, .5); }
+  li:nth-child(4n+1).is-active { background: rgba(255, 0, 255, .5); }
+  li:nth-child(4n+2).is-active { background: rgba(0, 255, 0, .5); }
+  li:nth-child(4n+3).is-active { background: rgba(0, 0, 255, .5); }
+</style>
+
+<main>
+<h1>LazyMotion</h1>
+<ul class="test">
+  <li class="" data-lazy>[data-lazy] windowの下端より上にすべて入ったらdefaultのクラスつける</li>
+  <li class="" data-lazy="bottom:100%|">[data-lazy="bottom:100%"] windowの下端より上にすべて入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="bottom:50%|">[data-lazy="bottom:50%"] windowの下端より上に要素50%入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="bottom:0%|">[data-lazy="bottom:0%"] windowの下端より上に要素が入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="bottom:100px">[data-lazy="bottom:100px"] windowの下端より上に要素が100px入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="bottom:300px">[data-lazy="bottom:300px"] windowの下端より上に要素が300px入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="center:100%">[data-lazy="center:100%"] windowの中心より上にすべて入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="center:50%">[data-lazy="center:50%"] windowの中心より上に要素50%入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="center:0%">[data-lazy="center:0%"] windowの中心より上に要素が入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="top:100%">[data-lazy="top:100%"] windowの上端より上にすべて入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="top:50%">[data-lazy="top:50%"] windowの上端より上に要素50%入ったら、defaultのクラスつける</li>
+  <li class="" data-lazy="top:0%">[data-lazy="top:0%"] windowの上端より上に要素が入ったら、defaultのクラスつける</li>
+</ul>
+
+</main>
+
+<footer>
+  <small>by <a href="https://github.com/yahsan2" target="_blank">ryosuke miyamoto</a> / <a href="https://github.com/yahsan2/lazy-motion">github</a></small>
+</footer>
+
+<script src="vendor/js/jquery.min.js"></script>
+<script src="src/js/script.js"></script>
+<script type="text/javascript" charset="utf-8">
+  var lazyMotion = new LazyMotion({
+    scollEvent: true
+  });
+</script>
